@@ -15,7 +15,7 @@ public abstract class IterationsCalculatedFunction implements ApproximatedFuncti
         this.maxIterations = DEFAULT_MAX_ITERATIONS;
     }
 
-    protected void checkValidity(final BigDecimal x, final BigDecimal precision) {
+    protected void validate(final BigDecimal x, final BigDecimal precision) {
         Objects.requireNonNull(x, "Function argument can not be null");
         Objects.requireNonNull(precision, "Precision can not be null");
         if (precision.compareTo(ZERO) <= 0 || precision.compareTo(ONE) >= 0) {
