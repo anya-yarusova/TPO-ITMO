@@ -44,5 +44,11 @@
             <artifactId>big-math</artifactId>
             <version>2.3.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.nylle</groupId>
+            <artifactId>javafixture</artifactId>
+            <version>2.10.1</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 </project>
