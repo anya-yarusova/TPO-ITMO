@@ -2,6 +2,8 @@ package org.example.function;
 
 import org.example.logariphmic.Ln;
 import org.example.logariphmic.Log;
+import org.example.trigonometry.Sec;
+import org.example.trigonometry.Sin;
 
 import java.math.BigDecimal;
 

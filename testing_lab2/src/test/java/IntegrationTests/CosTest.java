@@ -16,7 +16,6 @@ import static java.math.RoundingMode.HALF_EVEN;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CosTest {
-
     private static final BigDecimal DEFAULT_PRECISION = new BigDecimal("0.0001");
     private static final Fixture fixture = new Fixture();
 

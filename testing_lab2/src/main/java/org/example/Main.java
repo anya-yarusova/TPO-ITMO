@@ -1,9 +1,12 @@
 package org.example;
 
+import lombok.SneakyThrows;
 import org.example.function.ApproximatedFunction;
 import org.example.function.FunctionsSystem;
 import org.example.logariphmic.Ln;
 import org.example.logariphmic.Log;
+import org.example.trigonometry.Sec;
+import org.example.trigonometry.Sin;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,9 +16,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class Main {
+    @SneakyThrows
     public static void main(String[] args) {
         final Sin sin = new Sin();
-        final Sec csc = new Sec();
+        final Sec sec = new Sec();
         final Ln ln = new Ln();
         final Log log2 = new Log(2);
         final Log log3 = new Log(3);
