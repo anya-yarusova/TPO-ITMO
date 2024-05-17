@@ -40,7 +40,7 @@ public class Log extends IterationsCalculatedFunction {
         return ln
                 .calculate(x, precision)
                 .divide(
-                        ln.calculate(new BigDecimal(base), precision),
+                        ln.calculate(new BigDecimal(base), BigDecimal.valueOf(Double.MIN_VALUE)),
                         DECIMAL128.getPrecision(),
                         HALF_EVEN)
                 .setScale(precision.scale(), HALF_EVEN);

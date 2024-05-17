@@ -58,7 +58,7 @@ public class Ln extends IterationsCalculatedFunction {
                 i++;
             } while (new BigDecimal("0.1").pow(DECIMAL128.getPrecision()).compareTo((prevValue.subtract(curValue)).abs()) < 0 && i < maxIterations);
 
-            curValue = curValue.add(calculate(BigDecimal.valueOf(X - 1), precision));
+            curValue = curValue.add(calculate(BigDecimal.valueOf(X - 1), BigDecimal.valueOf(Double.MIN_VALUE)));
         }
 
         return curValue.setScale(precision.scale(), HALF_EVEN);
